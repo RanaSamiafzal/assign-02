@@ -147,7 +147,7 @@ body {
     background-image: url('Assets/hero_bg_1.jpg.webp');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -173,9 +173,9 @@ body {
     width: 100%;
     padding: 0 20px;
     position: relative;
-    /* z-index: 2; */
+    z-index: 1;
     gap: 70px;
-    
+
   }
 
   .hero-text {
@@ -192,6 +192,7 @@ body {
     margin-bottom: 20px;
     line-height: 1.1;
     font-weight: 700;
+    overflow-wrap: break-word;
     /* font-style: italic; */
   }
 
@@ -200,7 +201,7 @@ body {
     line-height: 1.6;
     margin-bottom: 0;
     font-weight: 400;
-    flex-wrap: wrap;
+    overflow-wrap: break-word;
   }
 
   .hero-form {
@@ -285,6 +286,24 @@ body {
     }
   }
 
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+    }
+
+    .hero-form {
+      padding: 20px;
+    }
+
+    .hero-form h2 {
+      font-size: 1.2rem;
+    }
+  }
+
   /* Practice Areas Section */
   .practice-areas {
     background-color: #f8f9fa; /* Light gray background */
@@ -358,6 +377,7 @@ body {
     color: #777;
     line-height: 1.6;
     font-size: 0.95rem;
+    overflow-wrap: break-word;
   }
 
   /* Responsive for Practice Areas */
@@ -442,6 +462,7 @@ body {
     line-height: 1.6;
     margin-bottom: 30px;
     font-size: 1rem;
+    overflow-wrap: break-word;
   }
 
   .book-btn {
@@ -546,6 +567,7 @@ body {
     color: #777;
     line-height: 1.6;
     font-size: 0.95rem;
+    overflow-wrap: break-word;
   }
 
   /* Responsive for Testimonials */
@@ -665,6 +687,7 @@ body {
     font-size: 0.95rem;
     background-color: white;
     margin: 0;
+    overflow-wrap: break-word;
   }
 
   .accordion summary:hover {

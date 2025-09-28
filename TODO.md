@@ -1,8 +1,0 @@
-- [x] Rename dropdown button to "Practice Area" in index.html
-- [x] Add Font Awesome CDN in index.html
-- [x] Fix font-size in style.css
-- [x] Remove float from .dropdown in style.css
-- [x] Adjust .dropbtn styles in style.css
-- [x] Adjust .dropdown-content position in style.css
-- [x] Add click toggle JS in script.js
-- [x] Add position adjustment JS in script.js
