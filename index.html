@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+    <header>
+    <nav>
+        <div id="nav-container">
+            <div id="nav-logo"><strong><a>Notary</a></strong></div>
+            <!-- <button id="menu-toggle" class="hamburger">
+                ☰
+              </button> -->
+            <div id="nav-items">
+                <ul class="nav-items-li">
+                    <li><a href="">Home</a> </li>
+                    <li class="dropdown">
+                        <a href="#practice-areas" class="dropbtn">Practice Area <i class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#practice-areas">Banking Law</a>
+                            <a href="#practice-areas">Business Law</a>
+                            <a href="#practice-areas">Civil Law</a>
+                            <a href="#practice-areas">Criminal Law</a>
+                            <a href="#practice-areas">Immigration Law</a>
+                            <a href="#practice-areas">Family Law</a>
+                        </div>
+                    </li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="hero" class="hero" style="background-image: url('Assets/hero_bg_1.jpg.webp');" >
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Notary Public & Legal solutions</h1>
+                <p>Your trusted partner for all legal documentation and notary services. We provide reliable and efficient solutions to meet your needs.</p>
+            </div>
+            <div class="hero-form">
+                <h2>Book Appointment</h2>
+                <form id="appointment-form">
+                    <input id="name" type="text" name="user_name" placeholder="Your Name" required>
+                    <input id="email" type="email" name="email" placeholder="Your Email" required>
+                    <input id="date" type="date" name="appointment_date" placeholder="Select Date" required>
+                    <textarea name="message" placeholder="Your Message"></textarea>
+                    <button id="submit-btn" type="submit">Book Appointment</button> 
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="practice-areas" class="practice-areas">
+        <div class="practice-areas-container">
+            <h2>Practice <span id="practice-areas-container-heading">Areas</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <i class="fas fa-building" style="color: #d4af37;"></i>
+                    <h3>Banking Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="practice-card">
+                    <i class="fas fa-briefcase" style="color: #d4af37;"></i>
+                    <h3>Business Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="practice-card">
+                    <i class="fas fa-balance-scale" style="color: #d4af37;"></i>
+                    <h3>Civil Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="practice-card">
+                    <i class="fas fa-gavel" style="color: #d4af37;"></i>
+                    <h3>Criminal Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="practice-card">
+                    <i class="fas fa-plane" style="color: #d4af37;"></i>
+                    <h3>Immigration Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="practice-card">
+                    <i class="fas fa-users" style="color: #d4af37;"></i>
+                    <h3>Family Law</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="attorneys">
+        <div class="attorneys-container">
+            <div class="attorneys-images">
+                <img src="Assets/atty_1.jpg.webp" alt="Female Attorney" class="attorney-img">
+                <img src="Assets/atty_2.jpg.webp" alt="Male Attorney" class="attorney-img">
+            </div>
+            <div class="attorneys-text">
+                <h2>We Provide <span id="practice-areas-container-heading">Reliable</span> Legal Services</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href="#hero" class="book-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2>Happy Customers</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="Assets/customer1.jpg.webp" alt="John Doe" class="customer-img">
+                    <h3>John Doe</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Assets/customer2.jpg.webp" alt="Jane Smith" class="customer-img">
+                    <h3>Jane Smith</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="testimonial-card">
+                    <img src="Assets/customer3.jpg.webp" alt="Bob Johnson" class="customer-img">
+                    <h3>Bob Johnson</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="legal-solutions">
+        <div class="legal-solutions-container">
+            <div class="legal-image">
+                <img src="Assets/atty_2.jpg.webp" alt="Legal Attorney" class="legal-img">
+            </div>
+            <div class="legal-content">
+                <h2>We Have Legal Solutions</h2>
+                <div class="accordion">
+                    <details>
+                        <summary>How do I start?</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </details>
+                    <details>
+                        <summary>What is your process?</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </details>
+                    <details>
+                        <summary>How long does it take?</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </details>
+                    <details>
+                        <summary>What are the costs?</summary>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-image">
+                <h2>Notary</h2>
+            </div>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Practice Areas</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Notary. All rights reserved. | <a href="#">Template by Example</a></p>
+        </div>
+    </footer>
+</main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
