@@ -1,6 +1,0 @@
-- [ ] Fix hero content going behind navbar by adding z-index to hero-container
-- [ ] Adjust hero height to min-height for better responsiveness
-- [ ] Add margin-top to sections to prevent overlapping
-- [ ] Add overflow-wrap to text elements to prevent overflow
-- [ ] Improve mobile media queries for smaller screens
-- [ ] Test responsiveness with browser_action
