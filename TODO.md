@@ -1,8 +1,6 @@
-- [x] Rename dropdown button to "Practice Area" in index.html
-- [x] Add Font Awesome CDN in index.html
-- [x] Fix font-size in style.css
-- [x] Remove float from .dropdown in style.css
-- [x] Adjust .dropbtn styles in style.css
-- [x] Adjust .dropdown-content position in style.css
-- [x] Add click toggle JS in script.js
-- [x] Add position adjustment JS in script.js
+- [ ] Fix hero content going behind navbar by adding z-index to hero-container
+- [ ] Adjust hero height to min-height for better responsiveness
+- [ ] Add margin-top to sections to prevent overlapping
+- [ ] Add overflow-wrap to text elements to prevent overflow
+- [ ] Improve mobile media queries for smaller screens
+- [ ] Test responsiveness with browser_action
