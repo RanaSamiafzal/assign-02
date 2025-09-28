@@ -76,22 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById("appointment-form").addEventListener("submit", function(e) {
   e.preventDefault(); // prevent page reload
-
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const date = document.getElementById('date').value;
-
-  if (!name || !email || !date) {
-    alert("Please fill in all required fields (Name, Email, Date). Message is optional.");
-    return;
-  }
-
-  const form = this;
   
-  email.sendForm("service_2r8l2ik", "template_eowk9z1", form)
+  emailjs.sendForm("service_2r8l2ik", "template_eowk9z1", this)
       .then(function() {
           alert("✅ Appointment booked successfully! We’ll contact you soon.");
-          form.reset(); // Clear all form fields after successful submission
+          this.reset(); // Clear all form fields after successful submission
       }, function(error) {
           console.log("FAILED...", error);
           alert("❌ Something went wrong. Please try again later.");
